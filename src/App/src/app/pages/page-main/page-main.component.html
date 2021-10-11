@@ -1,38 +1,87 @@
 <div class="container-fluid h-100">
     <div class="row h-100">
 
-        <div class="col-2 bg-light p-3">
-            <app-menu></app-menu>
-            <button class="btn btn-secondary btn-sm text-light w-100 mt-1"><i class="bi bi-chat-left-fill me-2"></i> New chat</button>
-            <div class="position-relative">
-                <i class="bi bi-search position-absolute"></i>
-                <input type="text" class="form-control mt-1" id="floatingInput" placeholder="Search">
+        <div class="col-2 bg-light p-3 d-flex flex-column overflow-hidden mh-100">
+            <div class="flex-auto">
+                <app-menu></app-menu>
+                <button class="btn btn-secondary btn-sm text-light w-100 mt-1"><i class="bi bi-chat-left-fill me-2"></i> New chat</button>
+                <div class="position-relative">
+                    <i class="bi bi-search position-absolute"></i>
+                    <input type="text" class="form-control mt-1" id="floatingInput" placeholder="Search">
+                </div>
             </div>
-            <p class="label mt-3 text-muted">Channels</p>
-            <app-room-selector type="channel" name="Test"></app-room-selector>
-            <app-room-selector type="channel" name="z0mg"></app-room-selector>
-            <app-room-selector type="channel" name="random"></app-room-selector>
-            <p class="label mt-3 text-muted">Messages</p>
-            <app-room-selector type="user" name="Pedro Pérez"></app-room-selector>
-            <app-room-selector type="user" name="Juan Zúñiga"></app-room-selector>
-            <app-room-selector type="user" name="Carlos Madrigal"></app-room-selector>
-            <p class="label mt-3 text-muted">Watches</p>
-            <app-room-selector type="watch" name="darkguy2008/palabra"></app-room-selector>
-            <app-room-selector type="watch" name="meeting"></app-room-selector>
-            <app-room-selector type="watch" name="git push"></app-room-selector>
+            <div class="flex-fill overflow-hidden">
+                <div class="chat mh-100 mt-3">
+                    <p class="label text-muted">Channels</p>
+                    <app-room-selector type="channel" name="Test"></app-room-selector>
+                    <app-room-selector type="channel" name="z0mg"></app-room-selector>
+                    <app-room-selector type="channel" name="random"></app-room-selector>
+                    <p class="label mt-3 text-muted">Messages</p>
+                    <app-room-selector type="user" name="Pedro Pérez"></app-room-selector>
+                    <app-room-selector type="user" name="Juan Zúñiga"></app-room-selector>
+                    <app-room-selector type="user" name="Carlos Madrigal"></app-room-selector>
+                    <p class="label mt-3 text-muted">Watches</p>
+                    <app-room-selector type="watch" name="darkguy2008/palabra"></app-room-selector>
+                    <app-room-selector type="watch" name="meeting"></app-room-selector>
+                    <app-room-selector type="watch" name="git push"></app-room-selector>
+                </div>
+            </div>
+            <div class="flex-auto footer mt-3">
+                <a class="text-decoration-none text-secondary" href="https://github.com/darkguy2008/Palabra">Github</a>
+                <p class="text-secondary">Version 47f1c3</p>
+            </div>
         </div>
         <div class="col px-0 mh-100">
-            <div class="d-flex flex-column mh-100 overflow-hidden p-3 h-100">
-                <div class="chat flex-fill mb-3">
+            <div class="d-flex flex-column mh-100 overflow-hidden h-100">
+                <div class="flex-auto">
+                    <app-chat-header></app-chat-header>
+                </div>
+                <div class="chat flex-fill mx-3 pt-3 pb-2 pe-3">
+                    <app-message></app-message>
+                    <app-message></app-message>
+                    <app-message></app-message>
+                    <div class="text-primary">
+                        <p class="mb-0">2021-10-11 (Saturday)</p>
+                        <hr class="mt-0 mb-3" />
+                    </div>
+                    <app-message></app-message>
+                    <app-message></app-message>
+                    <app-message></app-message>
+                    <app-message></app-message>
+                    <div class="text-primary">
+                        <p class="mb-0">2021-10-11 (Saturday)</p>
+                        <hr class="mt-0 mb-3" />
+                    </div>
+                    <app-message></app-message>
+                    <app-message></app-message>
+                    <app-message></app-message>
+                    <app-message></app-message>
+                    <app-message></app-message>
+                    <app-message></app-message>
+                    <app-message></app-message>
+                    <app-message></app-message>
+                    <app-message></app-message>
+                    <app-message></app-message>
+                    <app-message></app-message>
+                    <app-message></app-message>
+                    <app-message></app-message>
                     <app-message></app-message>
                     <app-message></app-message>
                     <app-message></app-message>
                     <app-message></app-message>
                 </div>
-                <div class="flex-auto">
+                <div class="flex-auto px-3 pb-3">
+                    <!-- <div class="bg-secondary text-light text-truncate p-2 d-flex flex-row align-items-center">
+                        <button class="btn btn-primary text-light py-1 px-2 me-2">
+                            <i class="bi bi-x"></i>
+                        </button>
+                        <p class="mb-0">
+                            "dslkdjalds jlasd jldj klds"
+                        </p>
+                    </div> -->
                     <div class="input-group">
                         <div class="form-floating flex-grow-1">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="Type a message">
+                            <textarea type="text" class="form-control" id="floatingInput" placeholder="Type a message"></textarea>
                             <label for="floatingInput" class="text-muted"><small>Type a message</small></label>
                         </div>
                         <button class="btn btn-primary btn-sm text-light px-4" type="button" id="button-addon2">
@@ -41,10 +90,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer">
-            <a class="text-decoration-none text-secondary" href="https://github.com/darkguy2008/Palabra">Github</a>
-            <p class="text-secondary">Version 47f1c3</p>
         </div>
     </div>
 

@@ -8,6 +8,7 @@ import { PageMainComponent } from './pages/page-main/page-main.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { MessageComponent } from './components/message/message.component';
 import { RoomSelectorComponent } from './components/room-selector/room-selector.component';
+import { ChatHeaderComponent } from './components/chat-header/chat-header.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RoomSelectorComponent } from './components/room-selector/room-selector.
     PageMainComponent,
     MenuComponent,
     MessageComponent,
-    RoomSelectorComponent
+    RoomSelectorComponent,
+    ChatHeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,3 @@
-* Convert menu layout to scrollable div layout like main chat window to stop using position: fixed on footer
-  * Custom style, looks so plain...
 * New chat dialog
   * Also add Ctrl+T shortcut
 * Figure out best way to show message timestamps
