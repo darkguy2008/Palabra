@@ -6,8 +6,11 @@
                 <i class="bi bi-lock" *ngIf="isPrivate"></i>
             </div>
             <!-- <div class="col-auto pe-2"><i class="bi bi-lock"></i></div> -->
-            <div class="col">{{ type == 'channel' ? '#' : '' }}{{ name }}</div>
-            <!-- <div class="col-auto">
+            <div class="col text-truncate">{{ type == 'channel' ? '#' : '' }}{{ name }}</div>
+            <!-- <div class="col-auto ms-2">
+                <i class="bi bi-bell-slash"></i>
+            </div> -->
+            <!-- <div class="col-auto ms-2">
                 <div class=" px-2 bg-primary text-light">4</div>
             </div> -->
         </div>
