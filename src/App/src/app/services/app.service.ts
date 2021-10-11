@@ -8,7 +8,8 @@ export class AppService {
 
   globals: IGlobals = {
     enableSSO: false,
-    enableGuestLogin: false
+    enableGuestLogin: false,
+    enableLocalAccounts: true
   };
 
   constructor() { }

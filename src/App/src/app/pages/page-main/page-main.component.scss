@@ -10,6 +10,23 @@ p {
     position: fixed;
     left: 0.5rem;
     bottom: 1rem;
-    font-size: 0.8rem;
+    font-size: 70%;
     opacity: 0.5;
+    pointer-events: none;
+    a {
+        pointer-events: all;
+    }
+}
+
+.position-relative {
+    i {
+        top: 50%;
+        right: 0.5rem;
+        transform: translateY(-50%);
+    }
+}
+
+.label {
+    font-size: 120%;
+    opacity: 0.75;
 }

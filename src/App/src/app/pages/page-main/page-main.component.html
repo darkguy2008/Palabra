@@ -4,14 +4,22 @@
         <div class="col-2 bg-light p-3">
             <app-menu></app-menu>
             <button class="btn btn-secondary btn-sm text-light w-100 mt-1"><i class="bi bi-chat-left-fill me-2"></i> New chat</button>
-            <p class="mt-3 text-muted">Channels</p>
-            <p class="ms-3">#Test</p>
-            <p class="ms-3">#z0mg</p>
-            <p class="ms-3">#random</p>
-            <p class="text-muted">Messages</p>
-            <p class="ms-3">Pedro Pérez</p>
-            <p class="ms-3">Juan Zúñiga</p>
-            <p class="ms-3">Carlos Madrigal</p>
+            <div class="position-relative">
+                <i class="bi bi-search position-absolute"></i>
+                <input type="text" class="form-control mt-1" id="floatingInput" placeholder="Search">
+            </div>
+            <p class="label mt-3 text-muted">Channels</p>
+            <app-room-selector type="channel" name="Test"></app-room-selector>
+            <app-room-selector type="channel" name="z0mg"></app-room-selector>
+            <app-room-selector type="channel" name="random"></app-room-selector>
+            <p class="label mt-3 text-muted">Messages</p>
+            <app-room-selector type="user" name="Pedro Pérez"></app-room-selector>
+            <app-room-selector type="user" name="Juan Zúñiga"></app-room-selector>
+            <app-room-selector type="user" name="Carlos Madrigal"></app-room-selector>
+            <p class="label mt-3 text-muted">Watches</p>
+            <app-room-selector type="watch" name="darkguy2008/palabra"></app-room-selector>
+            <app-room-selector type="watch" name="meeting"></app-room-selector>
+            <app-room-selector type="watch" name="git push"></app-room-selector>
         </div>
         <div class="col px-0 mh-100">
             <div class="d-flex flex-column mh-100 overflow-hidden p-3 h-100">
@@ -24,7 +32,7 @@
                 <div class="flex-auto">
                     <div class="input-group">
                         <div class="form-floating flex-grow-1">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Type a message">
                             <label for="floatingInput" class="text-muted"><small>Type a message</small></label>
                         </div>
                         <button class="btn btn-primary btn-sm text-light px-4" type="button" id="button-addon2">

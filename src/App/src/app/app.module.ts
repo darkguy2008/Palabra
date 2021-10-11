@@ -7,6 +7,7 @@ import { PageLoginComponent } from './pages/page-login/page-login.component';
 import { PageMainComponent } from './pages/page-main/page-main.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { MessageComponent } from './components/message/message.component';
+import { RoomSelectorComponent } from './components/room-selector/room-selector.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MessageComponent } from './components/message/message.component';
     PageLoginComponent,
     PageMainComponent,
     MenuComponent,
-    MessageComponent
+    MessageComponent,
+    RoomSelectorComponent
   ],
   imports: [
     BrowserModule,

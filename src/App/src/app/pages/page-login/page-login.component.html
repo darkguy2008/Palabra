@@ -1,21 +1,20 @@
 <div class="container-fluid h-100 bg-light">
     <div class="row no-gutters h-100">
-        <div class="col-3 px-0 mx-auto my-auto">
-
+        <div class="col-10 col-sm-6 col-md-4 px-0 mx-auto my-auto login">
             <div class="logo col-3 mx-auto mb-4">
                 <img src="/assets/logo.svg" width="100%">
             </div>
             <form>
-                <div class="form-floating mb-3">
+                <div class="form-floating mb-3" *ngIf="app.globals.enableLocalAccounts">
                     <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                     <label for="floatingInput">Email address</label>
                 </div>
-                <div class="form-floating mb-3">
+                <div class="form-floating mb-3" *ngIf="app.globals.enableLocalAccounts">
                     <input type="password" class="form-control" id="floatingPassword" autocomplete='new-password' placeholder="Password">
                     <label for="floatingPassword">Password</label>
                 </div>
                 <div class="d-grid gap-2 col mx-auto">
-                    <button class="btn btn-primary btn-lg text-light mb-4" type="button" routerLink="/main">Login</button>
+                    <button class="btn btn-primary btn-lg text-light mb-4" type="button" *ngIf="app.globals.enableLocalAccounts" routerLink="/main">Login</button>
                     <button class="btn btn-secondary text-light" type="button" *ngIf="app.globals.enableSSO">Login with SSO</button>
                     <button class="btn btn-secondary text-light" type="button" *ngIf="app.globals.enableGuestLogin">Login as guest</button>
                 </div>

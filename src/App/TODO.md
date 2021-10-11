@@ -1,5 +1,4 @@
 * Convert menu layout to scrollable div layout like main chat window to stop using position: fixed on footer
-* room-selector component with channel/message name + unread badge (and maybe icon/avatar?)
   * Custom style, looks so plain...
 * New chat dialog
   * Also add Ctrl+T shortcut
@@ -18,3 +17,4 @@
 * Add some kind of admin panel
 * Prepare database and API
 * Add SSO with OIDC
+* Add Search feature
