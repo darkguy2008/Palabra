@@ -1,10 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
 $primary: #35b784;
 $secondary: #5b7e85;
+$border-radius: 0;
+$border-radius-sm: 0;
+$border-radius-lg: 0;
 @import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 
 html,
 body {
     width: 100%;
     height: 100%;
+}
+
+::-webkit-scrollbar {
+    $color-bg: transparent;
+    $color-fg: $primary;
+
+    width: 8px;
+    height: 8px;
+    &-button {
+        width: 0px;
+        height: 0px;
+    }
+    &-thumb {
+        border: 0px solid $color-bg;
+        background: $color-fg;
+        border-radius: 0px;
+        &:hover {
+            background: $color-fg;
+        }
+        &:active {
+            background: $color-fg;
+        }
+    }
+    &-track {
+        background: $color-bg;
+        border-radius: 0px;
+        &:active {
+            background: $color-bg;
+        }
+    }
+    &-corner {
+        background: $color-bg;
+    }
 }

@@ -15,15 +15,13 @@
                     <label for="floatingPassword">Password</label>
                 </div>
                 <div class="d-grid gap-2 col mx-auto">
-                    <button class="btn btn-primary btn-lg text-light mb-4" type="button">Login</button>
+                    <button class="btn btn-primary btn-lg text-light mb-4" type="button" routerLink="/main">Login</button>
                     <button class="btn btn-secondary text-light" type="button" *ngIf="app.globals.enableSSO">Login with SSO</button>
                     <button class="btn btn-secondary text-light" type="button" *ngIf="app.globals.enableGuestLogin">Login as guest</button>
                 </div>
             </form>
             <div class="footer mb-3">
-                <small>
-                    <a class="text-decoration-none text-secondary" href="https://github.com/darkguy2008/Palabra">Github</a>
-                </small>
+                <a class="text-decoration-none text-secondary" href="https://github.com/darkguy2008/Palabra">Github</a>
             </div>
 
         </div>

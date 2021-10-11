@@ -1,0 +1,15 @@
+.chat {
+    overflow-y: scroll;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.footer {
+    position: fixed;
+    left: 0.5rem;
+    bottom: 1rem;
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
